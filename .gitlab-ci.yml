@@ -1,0 +1,12 @@
+image: debian:jessie
+
+stages:
+  - build
+
+before_script:
+  - apt-get update && apt-get install -y gcc-arm-none-eabi make
+
+compilation:
+  stage: build
+  script:
+    - make

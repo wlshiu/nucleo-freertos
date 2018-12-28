@@ -1,0 +1,26 @@
+2016-04-19 Kullawat Chaowanawatee <kullawat@coe.phuket.psu.ac.th>
+	Known issue:
+	  - Highest and lowest priority tasks are misbehaving.
+	
+	* Makefile: re-ordered the source files
+	* src/tasks.h: removed inline property
+	* src/tasks.c: removed inline property
+	* config/stm32f4xx_it.h: included FreeRTOS/include/task.h
+
+2016-02-25 Kullawat Chaowanawatee <kullawat@coe.phuket.psu.ac.th>
+	Release v1.1
+	Known issue:
+		- Highest and lowest priority tasks are misbehaving.
+	
+	* Drivers/Makefile: fixed wrong header files inclusion
+	* .gitlab-ci.yml: created on continuous integration purpose
+
+2015-03-11 Kullawat Chaowanawatee <kullawat@coe.phuket.psu.ac.th>
+	Release v1
+	No known issues
+
+	* config/stm32f4xx_it.c: fixed implicit declaration of xPortSysTickHandler()
+
+2015-03-10 Kullawat Chaowanawatee <kullawat@coe.phuket.psu.ac.th>
+	Preparing for release of v1
+
